@@ -340,7 +340,7 @@ export default function AuditTool() {
     <section
       id="audit"
       ref={sectionRef}
-      className="py-24 px-4"
+      className="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
       style={{ background: "#111111" }}
     >
       <motion.div
@@ -352,7 +352,7 @@ export default function AuditTool() {
         {/* Header */}
         <div className="mb-4 text-center">
           <h2
-            className="text-4xl md:text-5xl font-bold text-[#F5F5F5] leading-tight"
+            className="text-3xl md:text-5xl font-bold text-[#F5F5F5] leading-tight"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
             Auditez votre site en 30 secondes

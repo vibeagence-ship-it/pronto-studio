@@ -11,7 +11,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#080808]">
       {/* Navigation sticky */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[#222222] bg-[#080808]/80 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <a href="#" className="font-[family-name:var(--font-space-grotesk)] font-bold text-xl tracking-tight">
             ⚡ PRONTO<span className="text-[#FF3B00]">STUDIO</span>
           </a>

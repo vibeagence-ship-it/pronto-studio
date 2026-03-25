@@ -259,10 +259,10 @@ export default function Results() {
   return (
     <section
       id="resultats"
-      className="py-24 w-full"
+      className="py-16 md:py-24 w-full"
       style={{ backgroundColor: "#111111" }}
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col gap-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-16">
         {/* Header */}
         <motion.div
           ref={headerRef}
@@ -271,7 +271,7 @@ export default function Results() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="flex flex-col gap-4 text-center"
         >
-          <h2 className="font-bold font-[family-name:var(--font-space-grotesk)] text-4xl md:text-5xl text-[#F5F5F5] leading-tight tracking-tight">
+          <h2 className="font-bold font-[family-name:var(--font-space-grotesk)] text-3xl md:text-5xl text-[#F5F5F5] leading-tight tracking-tight">
             Des résultats qui parlent d&apos;eux-mêmes
           </h2>
           <p className="text-[#888888] text-lg md:text-xl max-w-xl mx-auto leading-relaxed">

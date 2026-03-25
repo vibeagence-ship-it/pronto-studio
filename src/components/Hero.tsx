@@ -51,7 +51,7 @@ function PillButton<T extends string>({ value, selected, onSelect }: PillButtonP
       onClick={() => onSelect(value)}
       whileHover={{ scale: 1.04 }}
       whileTap={{ scale: 0.97 }}
-      className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors duration-200 cursor-pointer ${
+      className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium border transition-colors duration-200 cursor-pointer ${
         isSelected
           ? "bg-[#FF3B00] border-[#FF3B00] text-white"
           : "bg-transparent border-[#333333] text-[#888888] hover:border-[#555555] hover:text-[#BBBBBB]"
@@ -183,14 +183,14 @@ export default function Hero() {
         >
           <motion.h1
             variants={lineVariants}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F5F5] leading-tight"
+            className="text-4xl md:text-6xl lg:text-8xl font-bold text-[#F5F5F5] leading-tight"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
             L&apos;âge des agents IA est là.
           </motion.h1>
           <motion.h1
             variants={lineVariants}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F5F5] leading-tight"
+            className="text-4xl md:text-6xl lg:text-8xl font-bold text-[#F5F5F5] leading-tight"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
             Votre marketing travaille
@@ -238,7 +238,7 @@ export default function Hero() {
 
           {/* Budget mensuel */}
           <div className="mb-5">
-            <label className="mb-2 flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-[#555555]">
+            <label className="mb-2 flex items-center justify-between gap-2 text-xs font-semibold uppercase tracking-widest text-[#555555]">
               <span>Budget mensuel</span>
               <span className="text-[#F5F5F5] text-sm normal-case tracking-normal">
                 {budget.toLocaleString("fr-FR")}€

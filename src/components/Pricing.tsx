@@ -192,10 +192,10 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="py-24"
+      className="py-16 md:py-24"
       style={{ backgroundColor: "#080808" }}
     >
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -205,7 +205,7 @@ export default function Pricing() {
           className="text-center mb-16"
         >
           <h2
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-3xl md:text-5xl font-bold mb-4"
             style={{
               fontFamily: "'Space Grotesk', sans-serif",
               color: "#F5F5F5",

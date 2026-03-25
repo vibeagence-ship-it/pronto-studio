@@ -148,7 +148,7 @@ export default function AgentFeed() {
   return (
     <section
       id="agents"
-      className="relative py-24 overflow-hidden"
+      className="relative py-16 md:py-24 overflow-hidden"
       style={{ backgroundColor: "#080808" }}
     >
       {/* Subtle grid pattern background */}
@@ -161,7 +161,7 @@ export default function AgentFeed() {
         }}
       />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Counter */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
@@ -212,7 +212,7 @@ export default function AgentFeed() {
           </span>
 
           <h2
-            className="text-4xl md:text-5xl font-bold text-center"
+            className="text-3xl md:text-5xl font-bold text-center"
             style={{
               fontFamily: "'Space Grotesk', sans-serif",
               color: "#F5F5F5",
