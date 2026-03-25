@@ -51,7 +51,7 @@ function PillButton<T extends string>({ value, selected, onSelect }: PillButtonP
       onClick={() => onSelect(value)}
       whileHover={{ scale: 1.04 }}
       whileTap={{ scale: 0.97 }}
-      className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium border transition-colors duration-200 cursor-pointer ${
+      className={`w-full px-2 py-2.5 rounded-xl text-xs font-medium border transition-colors duration-200 cursor-pointer text-center ${
         isSelected
           ? "bg-[#FF3B00] border-[#FF3B00] text-white"
           : "bg-transparent border-[#333333] text-[#888888] hover:border-[#555555] hover:text-[#BBBBBB]"
@@ -204,7 +204,7 @@ export default function Hero() {
           variants={fadeUpVariants}
           initial="hidden"
           animate="visible"
-          className="text-[#888888] text-lg mb-12 max-w-xl mx-auto"
+          className="text-[#888888] text-sm sm:text-lg mb-8 sm:mb-12 max-w-xl mx-auto"
         >
           Automatisez votre marketing avec des agents IA spécialisés.
           <br />
@@ -217,14 +217,14 @@ export default function Hero() {
           variants={fadeUpVariants}
           initial="hidden"
           animate="visible"
-          className="mx-auto mb-10 max-w-2xl rounded-2xl border border-[#1E1E1E] bg-[#0D0D0D] p-6 text-left"
+          className="mx-auto mb-10 w-full max-w-lg rounded-2xl border border-[#1E1E1E] bg-[#0D0D0D] p-5 text-left"
         >
           {/* Secteur */}
-          <div className="mb-5">
-            <label className="mb-2 block text-xs font-semibold uppercase tracking-widest text-[#555555]">
+          <div className="mb-6">
+            <label className="mb-3 block text-[11px] font-semibold uppercase tracking-widest text-[#555555]">
               Secteur
             </label>
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-3 gap-2">
               {SECTEURS.map((s) => (
                 <PillButton<Secteur>
                   key={s}
@@ -237,13 +237,15 @@ export default function Hero() {
           </div>
 
           {/* Budget mensuel */}
-          <div className="mb-5">
-            <label className="mb-2 flex items-center justify-between gap-2 text-xs font-semibold uppercase tracking-widest text-[#555555]">
-              <span>Budget mensuel</span>
-              <span className="text-[#F5F5F5] text-sm normal-case tracking-normal">
+          <div className="mb-6">
+            <div className="mb-3 flex items-center justify-between">
+              <label className="text-[11px] font-semibold uppercase tracking-widest text-[#555555]">
+                Budget mensuel
+              </label>
+              <span className="text-[#FF3B00] font-bold text-base">
                 {budget.toLocaleString("fr-FR")}€
               </span>
-            </label>
+            </div>
             <input
               type="range"
               min={500}
@@ -251,10 +253,10 @@ export default function Hero() {
               step={100}
               value={budget}
               onChange={(e) => setBudget(Number(e.target.value))}
-              className="w-full cursor-pointer accent-[#FF3B00]"
+              className="w-full h-1.5 cursor-pointer rounded-full appearance-none bg-[#222]"
               style={{ accentColor: "#FF3B00" }}
             />
-            <div className="mt-1 flex justify-between text-[10px] text-[#444444]">
+            <div className="mt-2 flex justify-between text-[10px] text-[#444444]">
               <span>500€</span>
               <span>5 000€</span>
             </div>
@@ -262,10 +264,10 @@ export default function Hero() {
 
           {/* Objectif */}
           <div className="mb-6">
-            <label className="mb-2 block text-xs font-semibold uppercase tracking-widest text-[#555555]">
+            <label className="mb-3 block text-[11px] font-semibold uppercase tracking-widest text-[#555555]">
               Objectif
             </label>
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-3 gap-2">
               {OBJECTIFS.map((o) => (
                 <PillButton<Objectif>
                   key={o}
