@@ -12,7 +12,7 @@ export default function Home() {
       {/* Navigation sticky */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[#222222] bg-[#080808]/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-          <a href="#" className="font-[family-name:var(--font-space-grotesk)] font-bold text-xl tracking-tight">
+          <a href="#" className="font-[family-name:var(--font-space-grotesk)] font-bold text-base sm:text-xl tracking-tight">
             ⚡ PRONTO<span className="text-[#FF3B00]">STUDIO</span>
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm text-[#888888]">
@@ -23,7 +23,7 @@ export default function Home() {
           </div>
           <a
             href="#pricing"
-            className="bg-[#FF3B00] hover:bg-[#FF5A2A] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
+            className="bg-[#FF3B00] hover:bg-[#FF5A2A] text-white text-xs sm:text-sm font-semibold px-3 sm:px-5 py-2 sm:py-2.5 rounded-full transition-colors whitespace-nowrap"
           >
             Démarrer
           </a>

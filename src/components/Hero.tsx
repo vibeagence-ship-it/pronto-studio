@@ -99,7 +99,7 @@ function MagneticCTAButton() {
         boxShadow: "0 0 40px 8px rgba(255, 59, 0, 0.45)",
       }}
       whileTap={{ scale: 0.97 }}
-      className="bg-[#FF3B00] text-white font-semibold px-8 py-4 rounded-full cursor-pointer transition-shadow duration-200"
+      className="bg-[#FF3B00] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full cursor-pointer transition-shadow duration-200 text-sm sm:text-base"
     >
       Démarrer maintenant
     </motion.button>
@@ -183,14 +183,14 @@ export default function Hero() {
         >
           <motion.h1
             variants={lineVariants}
-            className="text-4xl md:text-6xl lg:text-8xl font-bold text-[#F5F5F5] leading-tight"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-[#F5F5F5] leading-tight"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
             L&apos;âge des agents IA est là.
           </motion.h1>
           <motion.h1
             variants={lineVariants}
-            className="text-4xl md:text-6xl lg:text-8xl font-bold text-[#F5F5F5] leading-tight"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-[#F5F5F5] leading-tight"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
             Votre marketing travaille
